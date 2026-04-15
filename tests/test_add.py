@@ -14,7 +14,7 @@ def test_add_suma_positivos():
 # --- TU TURNO ---
 # Agregá tests para los siguientes casos:
 #   - Sumar dos números negativos
-#   def test_add_suma_negativos():
+def test_add_suma_negativos():
     assert add(-1, -2) == -3
 #   - Sumar un número positivo y uno negativo
 def test_add_suma_positivo_negativo():
