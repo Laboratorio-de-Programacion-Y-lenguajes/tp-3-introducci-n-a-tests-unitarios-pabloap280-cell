@@ -14,8 +14,15 @@ def test_sqrt_cuadrado_perfecto():
 # --- TU TURNO ---
 # Agregá tests para los siguientes casos:
 #   - Raíz de 0 (resultado: 0.0)
+def test_sqrt_cero():
+    assert sqrt(0) == 0.0
 #   - Raíz de un número que no es cuadrado perfecto (resultado decimal)
+def test_sqrt_no_cuadrado_perfecto():
+    assert sqrt(2) == pytest.approx(1.414, abs=1e-3)
 #   - Raíz de un número negativo → debe lanzar ValueError
+def test_sqrt_negativo():
+    with pytest.raises(ValueError):
+        sqrt(-4)
 #
 # Pista: para testear excepciones usá pytest.raises:
 #
